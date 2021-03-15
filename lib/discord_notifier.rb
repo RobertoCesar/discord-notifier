@@ -55,6 +55,7 @@ module Discord
 
     def self.send_form(params)
       ENV['http_proxy'] = ENV['HTTP_PROXY']
+      ENV['https_proxy'] = ENV['HTTPS_PROXY']
 
       uri = endpoint(params)
 
